@@ -26,7 +26,7 @@
 
 #import "NATViewController.h"
 
-static NSString * const kUUID = @"00000000-0000-0000-0000-000000000000";
+static NSString * const kUUID = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
 static NSString * const kIdentifier = @"SomeIdentifier";
 
 static NSString * const kOperationCellIdentifier = @"OperationCell";
@@ -37,10 +37,10 @@ static NSString * const kAdvertisingOperationTitle = @"Advertising";
 static NSString * const kRangingOperationTitle = @"Ranging";
 static NSUInteger const kNumberOfSections = 2;
 static NSUInteger const kNumberOfAvailableOperations = 3;
-static CGFloat const kOperationCellHeight = 44;
+static CGFloat const kOperationCellHeight = 55;
 static CGFloat const kBeaconCellHeight = 52;
 static NSString * const kBeaconSectionTitle = @"Looking for beacons...";
-static CGPoint const kActivityIndicatorPosition = (CGPoint){205, 12};
+static CGPoint const kActivityIndicatorPosition = (CGPoint){255, 12};
 static NSString * const kBeaconsHeaderViewIdentifier = @"BeaconsHeader";
 
 static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationContext;
@@ -202,6 +202,7 @@ typedef NS_ENUM(NSUInteger, NTOperationsRow) {
     switch (indexPath.section) {
         case NTOperationsSection: {
             cell = [tableView dequeueReusableCellWithIdentifier:kOperationCellIdentifier];
+            cell.textLabel.textAlignment = NSTextAlignmentLeft;
             switch (indexPath.row) {
                 case NTMonitoringRow:
                     cell.textLabel.text = kMonitoringOperationTitle;

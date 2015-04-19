@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.nicktoumpelis.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>edu.upenn.TroveRewards</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -24,19 +24,23 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Required for Monitoring.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Required for Monitoring and Ranging.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Required for Ranging.</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>bluetooth-central</string>
 		<string>bluetooth-peripheral</string>
+		<string>external-accessory</string>
+		<string>fetch</string>
 		<string>location</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Required for Monitoring and Ranging.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Required for Monitoring.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Required for Ranging.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

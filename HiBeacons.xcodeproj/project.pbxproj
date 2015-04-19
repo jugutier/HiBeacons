@@ -209,7 +209,6 @@
 				ORGANIZATIONNAME = "Nick Toumpelis";
 				TargetAttributes = {
 					CF2BC91E18019D6100C66D15 = {
-						DevelopmentTeam = P5JZPD83BK;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -394,6 +393,7 @@
 				INFOPLIST_FILE = "HiBeacons/HiBeacons-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,6 +410,7 @@
 				INFOPLIST_FILE = "HiBeacons/HiBeacons-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
